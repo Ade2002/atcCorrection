@@ -35,9 +35,23 @@ a {
     align-items: center;
 }
 
+.linkBtn {
+    border: 1px solid;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.navigation .linkBtn:hover,
+.linkBtn:hover {
+    border: 1px solid;
+    opacity: 0.5;
+}
+
 .paddingSides {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
 .flexc {
@@ -65,14 +79,11 @@ header .myname {
     }
 
     .notification {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     .notification span a {
-        border: 1px solid white;
-        border-radius: 5px;
-        padding: 0.5em 2em;
         color: var(--white);
     }
 
@@ -82,10 +93,20 @@ header .myname {
         color: #ffffff;
         align-self: flex-start;
         font-size: 20px;
-        margin-right: -10px;
-        margin-left: 2em;
+        margin-right: -45px;
+        margin-left: 1.5em;
+    }
+
+    .navigation {
+        width: 50%;
+    }
+
+    .navigation a {
+        color: var(--textColor);
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        border-bottom: 5px solid var(--blue);
     }
 }
-
-/* 
-*/
