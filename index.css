@@ -1,3 +1,9 @@
+:root {
+    --blue: #1207AB;
+    --white: #ffffff;
+    --textColor: rgba(21, 12, 33, 0.59);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,19 +12,80 @@
 body {
     font-size: 100%;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.none {
+    display: none;
+}
+
+.blue_BG {
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .flex {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-.flex_c {
+.paddingSides {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.flexc {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-header
+
+header .myname {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media only screen and (min-width:800px) {
+    .none {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .none_d {
+        display: none;
+    }
+
+    .notification {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .notification span a {
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 0.5em 2em;
+        color: var(--white);
+    }
+
+    .notification span button {
+        background-color: inherit;
+        border: none;
+        color: #ffffff;
+        align-self: flex-start;
+        font-size: 20px;
+        margin-right: -10px;
+        margin-left: 2em;
+    }
+}
+
+/* 
+*/
